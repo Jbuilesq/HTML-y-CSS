@@ -1,42 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- In the head is all things that cannot been seeing on web site -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
 </head>
 <body>
+    <!-- In the header is the navegation bar  -->
     <header>
         <nav>
             <a href="#about-me">Sobre Mi</a>
             <a href="#project">Proyectos</a>
             <a href="#contact">Contacto</a>
-        </nav>
-        
+        </nav>       
     </header>
+    <!-- In this section it can be find my personal information -->
     <section class="about" id="about-me">
         <h1 class="about-me-h1">JUAN DAVID BUILES QUIROZ - Riwi Developer</h1>
-        <h2>About Me</h2>
+        <h2>Sobre Mi</h2>
         <p class="about-me-p">Hola. Soy Juan David Builes.</p>
         <p class="about-me-p">Soy una persona apasionada por aprender, por ello una de las habilidades que me caracteriza como profesional es el compromiso; así como el trabajo en equipo y la buena comunicación. Debido al gran interés que tengo en el área, he logrado desarrollar un buen pensamiento crítico y gestión de proyectos, que me permitirá desarrollar de la mejor manera ...</p>
-        <img src="" alt="Juan's photo">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Conocimiento basico en Python</li>
-            <li>Conocimiento basico en HTML</li>
-            <li>Conocimiento basico en CSS</li>
+        <img class="about-me-img" src="./img/miFoto.webp" alt="Juan's photo">
+        <h2 class="about-me-h2">Habilidades.</h2>
+        <h3 class="about-me-h3">Habilidades técnicas:</h3>
+        <ul class="about-me-ul">
+            <li class="about-me-li">Conocimiento basico en Python.</li>
+            <li class="about-me-li">Conocimiento basico en HTML.</li>
+            <li class="about-me-li">Conocimiento basico en CSS.</li>
+        </ul>
+        <h3 class="about-me-h3">Habilidades blandas:</h3>
+        <ul class="about-me-h3">
+            <li class="about-me-li">Adaptabilidad.</li>
+            <li class="about-me-li">Pensamiento critico.</li>
+            <li class="about-me-li">Comunicación efectiva.</li>
+            <li class="about-me-li">Trabajo en equipo.</li>
+            <li class="about-me-li">Resolución de problemas.</li>
+            <li class="about-me-li">Creatividad.</li>
         </ul>
     </section>
-    <section class="project">
-        <h2>Proyectos</h2>
-        <h3>proyecto 1</h3>
-        <img src="" alt="imagen del proyecto.">
-
-
+    <!-- In this section it can be find some of my projects -->
+    <section class="projects" id="project">
+        <h2 class="projects-h2">Proyectos</h2>
+        <table class="projects-table">
+            <tr class="projects-tr">
+                <th class="projects-th">Nombre del proyecto</th>
+                <th class="projects-th">Tecnologias usadas</th>
+                <th class="projects-th">Imagen</th>
+            </tr>
+            <tr class="projects-tr">
+                <td class="projects-td">Juego BIK</td>
+                <td class="projects-td">HTML, CSS Y JavaScript</td>
+                <td class="projects-td"><img src="./img/BIK.PNG" alt="BIK Game"></td>
+            </tr>
+            <tr class="projects-tr">
+                <td class="projects-td">API Weather</td>
+                <td class="projects-td">Python</td>
+                <td class="projects-td"><img src="./img/API Weather.PNG" alt="API Weather"></td>
+            </tr>
+        </table>
     </section>
-    <section class="contact">
-        <h2>Contacto.</h2>
+    <!-- In this section you can find the necessary spots you need to fill to contact me -->
+    <section class="contact" id="contact">
+        <h2 class="contact-h2">Contacto.</h2>
+        <form  class="contact-form" action="/send" method="post">
+            <label class="contact-label" for="name">Name:</label>
+            <input class="contact-input" type="text" id="name" name="name"  required>
 
+            <label class="contact-label" for="email">Email:</label>
+            <input class="contact-input" type="email" id="email" name="email" required>
+
+            <label class="contact-label" for="message">Message</label>
+            <textarea class="contact-textarea" name="servicio" id="servicio" cols="30" rows="10" required></textarea>
+
+            <input class="contact-input" type="submit" value="Send">
+        </form>
+        <a class="contact-a" href="https://github.com/Jbuilesq" target="_blank">Mi Github</a>
     </section>
 </body>
 </html>
