@@ -1,29 +1,130 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+html{font-family:sans-serif;line-height:1.5;}
+
 body{
     text-align: center;
-    background-color: #0f0f0f;
+    background-color: #191919;
     color: #fff;
-    
-    
 }
 
-div{
-    color: rgb(126, 46, 255);
-}
-
-.rotate-box{
-    color: rgb(255, 46, 46);
+div, a{
+    color: #D05353;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #special{
-    color: rgb(73, 255, 118);
+    animation:jello-horizontal 1.9s linear both infinite;
+    color: #020308	;
+    background-color: #e6e6e6;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
 
+.box{
+    background-color: #ffffff;
+    box-shadow: rgba(255, 255, 255, 0.521) 6px 2px 16px 0px, rgba(51, 50, 50, 0.8) -6px -2px 16px 0px;
+    border: 3px solid #D05353;
+}
+
+.box::before{
+    content: "!New";
+    color: red;
+    font-weight: bold;
+}
+
+.rotate-box{
+    
+    color: #1916f7;
+    border: 2px solid #2e4eff;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+.rotate-box:hover {
+    animation: rotate-center 0.9s infinite
+}
+
+#cont-box {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 200px;
 }
 
 section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 10px;
     margin: 20px;
     border-radius: 10px;
-    border: 1px solid #646464;
-    box-shadow: 0px 1px 10px #646464;
+    background-color: #202020;
 }
 
+.interactivity{
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-box{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.fixed-box:hover{
+    background-color: #4e4f52;
+}
+
+a {
+    color: #020308	;
+    background-color: #e6e6e6;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 1s;
+}
+
+a:hover{
+    animation:jello-horizontal 1s linear both;
+}
+
+
+ @keyframes jello-horizontal {
+     0% {
+         transform: scale3d(1, 1, 1)
+     }
+     30% {
+         transform: scale3d(1.25, .75, 1)
+     }
+     40% {
+         transform: scale3d(.75, 1.25, 1)
+     }
+     50% {
+         transform: scale3d(1.15, .85, 1)
+     }
+     65% {
+         transform: scale3d(.95, 1.05, 1)
+     }
+     75% {
+         transform: scale3d(1.05, .95, 1)
+     }
+     100% {
+         transform: scale3d(1, 1, 1)
+     }
+ }
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(45deg)
+    }
+
+    100% {
+        transform: rotate(405deg)
+    }
+}
