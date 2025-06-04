@@ -5,21 +5,33 @@
     --text-color:#000;
 }
 
+/* html{
+    height: 100%;
+} */
+
 body{
-    background-color: var(--background-color)
+   
+    background-color: var(--background-color);
+
 }
+
 
 nav {
     background-color: var(--primary-color);
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 15px;
 }
-li{
-    list-style: none;
+ul{
+    display: flex;
+    align-items: center;
 }
 
-ul{
-    
+li{
+    list-style: none;
+
 }
 
 ul a{
@@ -28,5 +40,55 @@ ul a{
 }
 
 article{
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+main{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+
+}
+
+.ocupation{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4fr 3fr;
+    gap: 20px;
+    
+}
+
+
+.card-ocupation{
+    grid-column: 1/9;
+}
+.card-main-img{
+    grid-column: 9/13;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-about-me{
+    grid-column: 1/7;
+}
+
+.card-contact-me{
+    grid-column: 7/13;
+    background-color: var(--second-color);
+}
+
+aside{
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+    gap: 20px;
+}
+
+footer{
+    border-radius: 20px;
     background-color: var(--primary-color);
 }
