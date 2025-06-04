@@ -5,28 +5,38 @@
     --text-color:#000;
 }
 
-/* html{
-    height: 100%;
-} */
 
 body{
-   
+    display: grid;  
     background-color: var(--background-color);
-
+    grid-template-rows: 1fr 7fr;
+    margin: 20px;
 }
+
 
 
 nav {
     background-color: var(--primary-color);
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
     border-radius: 15px;
 }
+
+.nav-h1 {
+    margin-left: 25px;
+}
+
+#julia{
+    font-weight: lighter;
+}
+
 ul{
     display: flex;
     align-items: center;
+    justify-content:space-between;
+    margin-right: 25px;
 }
 
 li{
@@ -34,7 +44,8 @@ li{
 
 }
 
-ul a{
+li a{
+    color: var(--text-color);
     text-decoration: none;
     
 }
@@ -63,7 +74,13 @@ main{
 
 .card-ocupation{
     grid-column: 1/9;
+
 }
+
+.div-ocupation{
+    margin: 1rem;
+}
+
 .card-main-img{
     grid-column: 9/13;
 }
