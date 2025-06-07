@@ -18,7 +18,7 @@ body{
 }
 
 
-/* Barra de navegación */
+/* Navigation bar */ 
 nav {
     background-color: var(--primary-color);
     display: grid;
@@ -62,11 +62,7 @@ li a:hover{
     background-color: var(--second-color);
 }
 
-/* .respmenu{
-    display: none;
-} */
-
-/* Contenido principal */
+/* Main content */
 main{
     margin-top: 20px;
     display: grid;
@@ -87,7 +83,7 @@ article{
     gap: 20px;
     
 }
-/* tarjeta ocupación */
+/* Ocupation card */
 .card-ocupation{
     grid-column: 1/9;
     display: flex;
@@ -107,7 +103,7 @@ h2 {
     height: 40;
 }
 
-/* tarjeta imagen retrato */
+/* Portrait picture card */
 .card-main-img{
     grid-column: 9/13;
 }
@@ -117,7 +113,7 @@ h2 {
     height: 100%;
 }
 
-/* card sobre mi */
+/* About me card */
 .card-about-me{
     grid-column: 1/7;
     display: flex;
@@ -133,7 +129,7 @@ h2 {
     margin: 1rem;
 }
 
-/* tarjeta contactame */
+/* Contact me card */
 .card-contact-me{
     grid-column: 7/13;
     background-color: var(--second-color);
@@ -159,7 +155,7 @@ h2 {
     font-size: 2.5em;
 }
 
-/* Aqui van los projects */
+/* Here you can see the projects */
 aside{
     display: grid;
     grid-template-rows: 6fr 1fr;
@@ -221,20 +217,16 @@ footer{
     border-radius: 5px;
 }
 
-/* Tamaño para celulares */
+/* Cellphone size */
 
 @media (max-width: 480px) {
     .ocupation{
         display: flex;
         flex-direction: column;
-    }
-        .nav-ul{
-        display: none;
-    }    
-    
+    }  
 }
 
-/* Tamaño para tablets */
+/* Tablets size */
 @media (max-width: 768px) {
 
     main{
